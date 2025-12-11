@@ -21,14 +21,14 @@ void bubble_sort(int *array, size_t size)
 		for (count = 0; count < size - 1; count++)
 		{
 			if (array[count] > array[count + 1])
-				{
+			{
 					temp = array[count];
 					array[count] = array[count + 1];
 					array[count + 1] = temp;
 					check = false;
 
 					print_array(array, size);
-				}
+			}
 		}
 	}
 }
