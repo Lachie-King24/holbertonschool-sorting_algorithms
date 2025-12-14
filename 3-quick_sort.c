@@ -12,6 +12,9 @@ static void swap(int *a, int *b, int *array, size_t size)
 {
 	int tmp;
 
+	if (*a == *b)
+		return;
+
 	tmp = *a;
 	*a = *b;
 	*b = tmp;
